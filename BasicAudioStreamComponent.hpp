@@ -23,6 +23,8 @@ struct BasicAudioStreamComponent : Component
     std::shared_ptr<AudioBuffer> buffer;
     RotateCounter<std::size_t> cursor;
 
+    BasicAudioStreamComponent() = default;
+
     BasicAudioStreamComponent(
         std::shared_ptr<AudioBuffer> audio_buffer,
         bool playing,
